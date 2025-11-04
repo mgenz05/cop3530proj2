@@ -179,7 +179,7 @@ void MyFrame::onButtonClick(wxCommandEvent& event) {
     // Run MinHeap algorithm to find best match
     MinHeap heap;
     for (auto& entry : medicineTable) {
-        double score = computeScore(entry, userSelections);
+        int score = computeScore(entry, userSelections);
         heap.insertItem(entry.first, score);
     }
 
