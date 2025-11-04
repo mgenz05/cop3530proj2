@@ -161,7 +161,7 @@ void MyFrame::onButtonClick(wxCommandEvent& event) {
     // Run MaxHeap algorithm to find best match
     MaxHeap maxHeap;
     for (auto& entry : medicineTable) {
-        double score = computeScore(entry, userSelections);
+        int score = computeScore(entry, userSelections);
         maxHeap.insertItem(entry.first, score);
     }
 
