@@ -138,15 +138,15 @@ MedicineScore MaxHeap::extractMax() {
 
 //https://www.geeksforgeeks.org/cpp/pair-in-cpp-stl/
 //https://www.geeksforgeeks.org/cpp/std-find-in-cpp/
-double computeScore(const pair<const string, vector<string>>& medicine_entry, const vector<string>& userSelections) {
+int computeScore(const pair<const string, vector<string>>& medicine_entry, const vector<string>& userSelections) {
    const vector<string>& characteristics = medicine_entry.second;
-   double score = 0.0;
+   int score = 0;
 
 
    for (const string& choice : userSelections) {
        // Check if the medicine contains this characteristic
        if (find(characteristics.begin(), characteristics.end(), choice) != characteristics.end()) {
-           score += 1.0; // Add 1 point per match (you can tweak this)
+           score += 1; // Add 1 point per match (you can tweak this)
        }
    }
 
