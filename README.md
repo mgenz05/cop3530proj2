@@ -6,7 +6,7 @@ The application loads a CSV based medicine database, computes match scores using
 ## Tech Stack
 - C++: Used for heap implementation, scoring logic, and application structure
 - wxWidgets: GUI framework used to build the interactive interface
-- Custom Max Heap: Implemented manually using vectors
+- Custom Max Heap implemented manually using vectors
 - Imported Min Heap using priority queues
 - CLion IDE: Used for development, debugging, and project organization
 - CMake: Build configuration for cross platform compilation
